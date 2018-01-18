@@ -4351,7 +4351,7 @@
 		init: function(parent) {
 			this._super();
 			this.prefs = services.Preferences.instance();
-			//server url
+			//server  url
 			this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http://127.0.0.1:9200";
 			if( this.base_uri.charAt( this.base_uri.length - 1 ) !== "/" ) {
 				// XHR request fails if the URL is not ending with a "/"
